@@ -126,9 +126,6 @@ switch ($action) {
         //TEST
         echo "Page de validation";
         
-        //validation
-        // $pdo->majEtatFicheFrais($moisAChoisir,$visiteurAChoisir,"VA"); A DECOMMENTER
-        
         //vue :
         include 'vues/v_confirmationValidation.php';
         

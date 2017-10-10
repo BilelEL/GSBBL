@@ -21,10 +21,10 @@ switch($action){
 			$id = $visiteur['id'];
 			$nom =  $visiteur['nom'];
 			$prenom = $visiteur['prenom'];
-                        $fonction = $visiteur['fonction'];
-			connecter($id,$nom,$prenom,$fonction);
+                        $statut = $visiteur['statut'];
+			connecter($id,$nom,$prenom,$statut);
                         
-                        if($_SESSION['fonction'] === 'visiteur')
+                        if($_SESSION["statut"] === 'visiteur')
                         {
                             include("vues/v_sommaire.php");
                         }

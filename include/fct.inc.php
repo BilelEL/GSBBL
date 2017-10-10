@@ -20,11 +20,11 @@ function estConnecte(){
  * @param $nom
  * @param $prenom
  */
-function connecter($id,$nom,$prenom,$fonction){
+function connecter($id,$nom,$prenom,$statut){
 	$_SESSION['idVisiteur']= $id; 
 	$_SESSION['nom']= $nom;
 	$_SESSION['prenom']= $prenom;
-        $_SESSION['fonction'] = $fonction;
+        $_SESSION['statut'] = $statut;
 }
 /**
  * Détruit la session active
@@ -201,14 +201,7 @@ function nbErreurs(){
 	}
 }
 
-/**
- * @author Aymeric Laze
- * 
- * Retourne le mois augmente d'un sous la forme aaaamm
- * 
- * @param str $mois sous forme aaaamm
- * @return str $nouveauMois sous la forme aaaamm augmenté d'un, l'annee peut augmenter en consequence
- */
+
 function incrementerMois($mois)
 {    
     //scindage et transtypage de $mois 
